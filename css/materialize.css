@@ -4543,7 +4543,7 @@ small {
 }
 
 .card .card-title {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -5310,8 +5310,8 @@ a.waves-effect .waves-ripple {
   min-height: 3rem;
   line-height: 3rem;
   padding: 0 1rem;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background-color: #0E0652;
+  border-bottom: 1px solid #fff;
 }
 
 .collapsible-header i {

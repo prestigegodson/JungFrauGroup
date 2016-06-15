@@ -1,251 +1,295 @@
 <!DOCTYPE html>
-<!--
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Jung Frau</title>
 
--->
-<html>
-    <head>
-        <title>JungFrau Group</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen, projection" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
-        
-        <style>
-            nav .dropdown-content li:hover {
-              background-color: #3d5afe;
-              color:#fff;
-              
-        }
-        nav .dropdown-content li:hover a{
-              background-color: #3d5afe;
-              color:#fff;
-        }
-        </style>
-    </head>
-    
-    <body>
-        
-        <nav class="indigo accent-3" role="navigation">
-            
-            <div class="nav-wrapper" >
-                <a href="" class="brand-logo" style="z-index: 9999"><img src="img/logo.png" alt="JungFrauGroup" class="responsive-img" /></a>
-                <a href="#" data-activates="mobile-menu1" class="button-collapse"><i class="material-icons">menu</i></a>
-                
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="" class="dropdown-button" data-activates="homeDropDown">Home</a></li>
-                    <li><a href="" class="dropdown-button" data-activates="aboutDropDown">About</a></li>
-                    <li><a href="" class="dropdown-button" data-activates="contactDropDown">Contact</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Partners</a></li>
-                </ul>
-                
-                <!-- Mobile Menu --->
-                <ul class="side-nav" id="mobile-menu1">
-                    <li><a href="#" class="dropdown-button2" data-activates="homeDropDown2">Home</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#" class="dropdown-button2" data-activates="aboutDropDown2">About</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#" class="dropdown-button2" data-activates="contactDropDown2">Contact</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Services</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Products</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Partners</a></li>
-                </ul> 
-                
-                <!-- Dropdown menus -->
-                <ul class="dropdown-content" id="homeDropDown">
-                    <li><a href="#">News</a></li>
-                </ul>
-                <ul class="dropdown-content s12" id="aboutDropDown">
-                    <li><a href="#">Mission & Vision</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Companies Profile</a></li>
-                </ul>
-                <ul class="dropdown-content s12" id="contactDropDown">
-                    <li><a href="#">FeedBack & Enquiry</a></li>
-                </ul>
-                <!-- End of DropDown menus --->
-                
-                 <!-- Dropdown menus for sideNav -->
-                <ul class="dropdown-content" id="homeDropDown2">
-                    <li><a href="">Home</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">News</a></li>
-                </ul>
-                <ul class="dropdown-content s12" id="aboutDropDown2">
-                    <li><a href="#">About</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Mission & Vision</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Companies Profile</a></li>
-                </ul>
-                <ul class="dropdown-content s12" id="contactDropDown2">
-                    <li><a href="#">Contact</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">FeedBack & Enquiry</a></li>
-                </ul>
-                <!-- End of DropDown menus --->
-            </div>
-            
-        </nav>
-        
-        <!-- Ebd of Navigation menu -->
-    
-        
-        <!-- Slider Begins Here ------>
-        <div class="slider">
-            
-            <ul class="slides">
-                
-                <li>
-                    <img src="img/slides/ginger.png" />
-                    <div class="caption center-align">
-                        <h3>Ginger</h3>
-                        <p>Finest Ginger</p>
-                    </div>
-                </li>
-                
-                <li>
-                    <img src="img/slides/cashew.jpg" />
-                    <div class="caption left-align">
-                        <h3>Cashew Nut</h3>
-                        <p>Our fine cashew nut</p>
-                    </div>
-                </li>
-                
-                <li>
-                    <img src="img/slides/cocoa.jpg" />
-                    <div class="caption left-align">
-                        <h3>Cocoa</h3>
-                        <p>No1 Cocoa worldwide</p>
-                    </div>
-                </li>
-                
-            </ul>
-            
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper">
+        <a id="logo-container" href="#" class="brand-logo black-text"><img src="img/logo.png" height="50" width="180" alt="logo" /></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center text-lighten-2">JUNG FRAU</h1>
+        <div class="row center">
+          <h5 class="header col s12 light"> We are the first choice for Clearing and forwarding, Consulting, 
+              Exporting Commodities, Freight, General Import and Export, Transport and Logistics.</h5>
         </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Get Started</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+      <div class="parallax"><img src="img/bg3.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section center-align">
+
+      <!--   Icon Section   -->
+      <div class="row">
+          <h4>Some of Our Products</h4>
+           <!-- Slider Begins Here ------>
+        <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+           
         <!-- Slider ends here -->
+      </div>
+    </div>
+  </div>
+    
+    <div class='parallax-container whatwedo'> 
+  <div class="container  ">
+    <div class="section center-align">
+
+      <!--   Icon Section   -->
+      <div class="row">
+          <h4 class="blacktext">What We Do</h4>
+           <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header text-black active"><i class="material-icons">filter_drama</i>Clearing and forwarding</div>
+              <div class="collapsible-body blacktext"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header text-black"><i class="material-icons">place</i>General Import and Export</div>
+              <div class="collapsible-body blacktext"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header text-black"><i class="material-icons">whatshot</i>Exporting Commodities</div>
+              <div class="collapsible-body blacktext"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header text-black"><i class="material-icons">whatshot</i>Consulting</div>
+              <div class="collapsible-body blacktext"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header text-black"><i class="material-icons">whatshot</i>Freight</div>
+              <div class="collapsible-body blacktext"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header text-black"><i class="material-icons">whatshot</i>Transport</div>
+              <div class="collapsible-body blacktext"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+          </ul>
         
-        <!-- Boards List starts here -->
-        
-        
-            <div class="row">
-                
-                <div class="col s12 m3">
-                        <div class="card hoverable medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/ceo.jpg" width="300" height="300" />
-                            </div>
-                        
-                        <div class="card-content">
-                            <span class="card-title activator">The Chairman/C.E.O</span>
-                            <p>Chief Edward C. Obele</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title">The Chairman/C.E.O</span>
-                            <div class="divider"></div>
-                            <p>Married to a German citizen with children. Mrs. Astrid Holger Obele, 
-                                and has been a German resident since 1990.
-                                A graduate of Accountancy at Federal Polytechnic, Anambra State, Nigeria.
-                            </p>
-                        </div>
-                        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+  
+
+  <div class="">
+    <div class="section center-align">
+
+      <!--   Icon Section   -->
+      <div class="row">
+          <h4 class="blacktext">Board of Directors</h4>
+          <div class="col s12 m3">
+               <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/board/3.jpg" alt="ceo" width="300" height="300" >
                 </div>
-                
-                <div class="col s12 m3">
-                        <div class="card hoverable medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/exec_director.jpg" width="300" height="300" />
-                            </div>
-                        
-                        <div class="card-content">
-                            <span class="card-title activator">Executive Director(E.D)</span>
-                            <p>Mr. Solomon Femi Asere</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Executive Director(E.D)</span>
-                            <div class="divider"></div>
-                            <p>
-                                An agronomist, a seasoned travel/tours and farming projects consultant.
-                                A graduate of Agriculture (soil science) of Obafemi Awolowo Univ. 
-                                Nigeria President on the rock multipurpose coroperative society (2013 to Date) 
-                            </p>
-                        </div>
-                        </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Chief Edward C. Obele<i class="material-icons right">more_vert</i></span>
+                  <p>The Chairman/C.E.O</p>
                 </div>
-                
-                <div class="col s12 m3">
-                        <div class="card hoverable medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/IMG-20160606-WA0003.jpg" width="300" height="300" />
-                            </div>
-                        
-                        <div class="card-content">
-                            <span class="card-title activator">Management</span>
-                            
-                            <p>Hon. Amb. Dr Excel Odiri Godfreed</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Hon. Amb. Dr Excel Odiri Godfreed</span>
-                            <div class="divider"></div>
-                            <p>
-                                A postgraduate of Cornerstone Univ. Tampa, Florida, USA(Ph.D in Mass Communications)
-                                A conferment of Honorary Doctorate degree in Corporate Management and governance, 
-                                Technology Univ. of America
-                            </p>
-                        </div>
-                        </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
-                
-                <div class="col s12 m3 ">
-                        <div class="card hoverable medium">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/wareHouse_manager.jpg" width="300" height="300"/>
-                            </div>
-                        
-                        <div class="card-content">
-                            <span class="card-title activator">Management</span>
-                            <p>Engineer Udoka Obele-B.</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Engineer Udoka Obele-B.</span>
-                            <div class="divider"></div>
-                            <p>
-                                Engineer Udoka Obele-B.Eng (civil Engineering) Anambra state university of science & Technology, 
-                                EnuguDiploma (financial mgt) University of Ibadan consultancy services. C.E.O- Manhanger Nigeria limited
-                            </p>
-                        </div>
-                        </div>
+              </div>
+          </div>
+          
+           <div class="col s12 m3">
+               <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator"  src="img/board/2.jpg" alt="exec" width="300" height="300" >
                 </div>
-                
-            </div>
-        
-        
-        <script src="js/jquery.min.js"></script>
-        <script src="js/materialize.min.js"></script>
-        
-        <script>
-            $(document).ready(function()
-            {
-                $(".dropdown-button").dropdown({
-                    belowOrigin: true,
-                    hover: true,
-                    constrain_width: false
-                });
-                
-                $(".dropdown-button2").dropdown({
-                    belowOrigin: true,
-                    hover: true,
-                    constrain_width: false
-                });
-                
-                $(".button-collapse").sideNav();
-                
-                $(".slider").slider();
-            })
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Mr. Solomon Femi Asere<i class="material-icons right">more_vert</i></span>
+                  <p>Executive Director(E.D)</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+          </div>
+          
+           <div class="col s12 m3">
+               <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator"  src="img/board/1.jpg" alt="ceo" width="300" height="300" >
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Hon. Amb. Dr Excel Odiri Godfreed<i class="material-icons right">more_vert</i></span>
+                  <p>Management</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+          </div>
+          
+           <div class="col s12 m3">
+               <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator"  src="img/board/4.jpg" alt="ceo" width="300" height="300" >
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Engineer Udoka Obele-B.<i class="material-icons right">more_vert</i></span>
+                  <p>Managing Director</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">over 1000 people</h5>
+        </div>
+      </div>
+    </div>
+      <div class="parallax"><img src="img/bg3.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+  
+
+
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+    
+    <script>
+            $('.slider').slider({
+                full_width: true,
+                interval: 5000
+            });
+            
+             $('.collapsible').collapsible({
+                accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+              });
         </script>
-    </body>
+  </body>
 </html>
