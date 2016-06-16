@@ -5310,7 +5310,8 @@ a.waves-effect .waves-ripple {
   min-height: 3rem;
   line-height: 3rem;
   padding: 0 1rem;
-  background-color: #0E0652;
+/*  background-color: #0E0652;*/
+  background-color: #ededed;
   border-bottom: 1px solid #fff;
 }
 
