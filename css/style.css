@@ -30,11 +30,24 @@ p {
   }
   
   .whatwedo{
+       background-color: #fff;
+  }
+  
+  .products{
       background-color: #f9fafc;
   }
   
   .blacktext{
      color: #000 !important;
+  }
+  
+  .page-footer{
+      background-color: #302f2f !important;
+  
+  }
+  
+  .footer-copyright{
+      background-color: #282828 !important;
   }
 
 @media only screen and (max-width : 992px) {

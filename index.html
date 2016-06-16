@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/jcarousel.responsive.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -40,7 +41,7 @@
               Exporting Commodities, Freight, General Import and Export, Transport and Logistics.</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Get Started</a>
+          <a href="" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Get Started</a>
         </div>
         <br><br>
 
@@ -49,52 +50,6 @@
       <div class="parallax"><img src="img/bg3.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
-
-  <div class="container">
-    <div class="section center-align">
-
-      <!--   Icon Section   -->
-      <div class="row">
-          <h4>Some of Our Products</h4>
-           <!-- Slider Begins Here ------>
-        <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
-           
-        <!-- Slider ends here -->
-      </div>
-    </div>
-  </div>
-    
     <div class='parallax-container whatwedo'> 
   <div class="container  ">
     <div class="section center-align">
@@ -133,6 +88,45 @@
     </div>
   </div>
     </div>
+    
+    
+ <div class="products"> 
+     <div class="container products">
+    <div class="section center-align">
+
+      <!--   Icon Section   -->
+      <div class="row">
+          <h4>Our Products</h4>
+           <!-- Slider Begins Here ------>
+        <div class="wrapper">
+
+            <p>These products are presently available in stock</p>
+
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/slides/cashew.jpg" width="300" height="500" alt="Image 1"><p>Cashew Nuts</p></li>
+                        <li><img src="img/slides/coal.jpg" width="300" height="500" alt="Image 2"><p>Charcoal (Hardwood Restaurant)</p></li>
+                        <li><img src="img/slides/cocoa.jpg" alt="Image 3"><p>Cocoa Beans</p></li>
+                        <li><img src="img/slides/ginger.jpg" alt="Image 4"><p>Ginger (Dried/Split)</p></li>
+                        <li><img src="img/slides/gum.jpg" alt="Image 5"><p>Gum Arabic</p></li>
+                        <li><img src="img/slides/seasame.jpg" alt="Image 5"><p>Sesame Seed</p></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                <p class="jcarousel-pagination"></p>
+            </div>
+        </div>
+           
+        <!-- Slider ends here -->
+      </div>
+    </div>
+  </div>
+ </div>
+
     
   
 
@@ -226,10 +220,44 @@
     <div class="section">
 
       <div class="row">
-        <div class="col s12 center">
+        <div class="col s12">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h4 class="center">Contact Us</h4>
+          <p class="left-align light">Kindly drop a Message</p>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input placeholder="" id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="" value="" id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea placeholder="" id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">Message</label>
+                </div>
+              </div>
+              <div class="row">
+                   <div class="col s12 center">
+                    <button class="btn waves-effect waves-light blue" type="submit" name="action">Send
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        
         </div>
       </div>
 
@@ -237,28 +265,19 @@
   </div>
 
 
-  <footer class="page-footer teal">
+  <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">Jung Frau</h5>
+          <p class="grey-text text-lighten-4">We are a Nigeria based agency that deals in the production of quality Agricultural products</p>
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+        <div class="col offset-l4 l2 s12">
+          <h5 class="white-text">Connect </h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">facebook</a></li>
             <li><a class="white-text" href="#!">Link 2</a></li>
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
@@ -268,7 +287,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+          Jung Frau &copy; 2016 All rights reserved
       </div>
     </div>
   </footer>
@@ -278,6 +297,9 @@
   <!--  Scripts-->
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.js"></script>
+  <script src="js/jcarousel.responsive.js"></script>
+  <script src="js/jquery.jcarousel.min.js"></script>
+  
   <script src="js/init.js"></script>
 
     
@@ -290,6 +312,22 @@
              $('.collapsible').collapsible({
                 accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
               });
+              
+            $('.jcarousel').jcarousel({
+                 autoplay : true
+            });
+            
+            
+            $(document).ready(function(){
+
+                setInterval(sliding,6000);
+
+                function sliding(){
+                    var active = $('.jcarousel-control-next'); 
+                    active.click();
+                }
+            });
+              
         </script>
   </body>
 </html>
