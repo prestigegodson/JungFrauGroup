@@ -10,22 +10,32 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/jcarousel.responsive.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper">
         <a id="logo-container" href="#" class="brand-logo black-text"><img src="img/logo.png" height="50" width="180" alt="logo" /></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Partners</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="staffs.html">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li class="light-blue darken-4"><a href="" class="white-text" onclick="return false;">MENU</a></li>
+        <div class="divider"></div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="staffs.html">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -40,9 +50,7 @@
           <h5 class="header col s12 light"> We are the first choice for Clearing and forwarding, Consulting, 
               Exporting Commodities, Freight, General Import and Export, Transport and Logistics.</h5>
         </div>
-        <div class="row center">
-          <a href="" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Get Started</a>
-        </div>
+        
         <br><br>
 
       </div>
@@ -50,11 +58,28 @@
       <div class="parallax"><img src="img/bg3.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
+  
+    <div>
+        <div class="container">
+        <div class="section center-align">
+            <h4 class="center-align">Meet JungFrauGroup</h4>
+            <p class="flow-text">
+                JUNGFRAU is an integrated group of companies , We  Carry  out services in the following areas, 
+                but not limited to  International Trade (import /export ) , Manufacturers Raw Materials & Agro commodities 
+                Export, Vessel Management, Freight forwarding, marine logistics and support services...
+            </p>
+            <a href="About.html" class="btn waves-effect waves-light blue lighten-1">Read More <i class="fa fa-paper-plane-o"></i></a>
+        </div>
+        </div>
+    </div>
+    
+  <!--
     <div class='whatwedo'> 
   <div class="container  ">
     <div class="section center-align">
-
+ -->
       <!--   Icon Section   -->
+      <!--
       <div class="row">
           <h4 class="blacktext">What We Do</h4>
            <ul class="collapsible" data-collapsible="accordion">
@@ -89,8 +114,9 @@
   </div>
     </div>
     
+    -->
     
- <div class="products"> 
+    <div class="products" id="products"> 
      <div class="container products">
     <div class="section center-align">
 
@@ -142,12 +168,35 @@
                     <img class="activator" src="img/board/3.jpg" alt="ceo" width="300" height="300" >
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Chief Edward C. Obele<i class="material-icons right">more_vert</i></span>
-                  <p>The Chairman/C.E.O</p>
+                  <span class="card-title activator grey-text text-darken-4">The Chairman/C.E.O<i class="material-icons right">more_vert</i></span>
+                  <p>Chief Edward C. Obele</p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <span class="card-title grey-text text-darken-4">The Chairman/C.E.O<i class="material-icons right">close</i></span>
+                  <p>
+                      Married to a German citizen with children. Mrs. Astrid Holger Obele, and has been a German resident since 1990. 
+                      A graduate of Accountancy at Federal Polytechnic, Anambra State, Nigeria. <br />
+                      <a href="staffs.html" class="btn waves-effect waves-light blue lighten-1">Read More <i class="fa fa-paper-plane-o"></i></a>
+                  </p>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col s12 m3">
+               <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator"  src="img/board/4.jpg" alt="MD" width="300" height="300" >
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">General Manager<i class="material-icons right">more_vert</i></span>
+                  <p>Engineer Udoka Obele</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">General Manager<i class="material-icons right">close</i></span>
+                  <p>
+                      B.Eng (civil Engineering) Anambra state university of science & Technology, 
+                      Enugu Diploma (financial mgt) University of Ibadan consultancy services. C.E.O- Manhanger Nigeria limited
+                  </p>
                 </div>
               </div>
           </div>
@@ -158,12 +207,17 @@
                   <img class="activator"  src="img/board/2.jpg" alt="exec" width="300" height="300" >
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Mr. Solomon Femi Asere<i class="material-icons right">more_vert</i></span>
-                  <p>Executive Director(E.D)</p>
+                  <span class="card-title activator grey-text text-darken-4">Executive Director<i class="material-icons right">more_vert</i></span>
+                  <p>Mr. Solomon Femi Asere</p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title grey-text text-darken-4">Executive Director<i class="material-icons right">close</i></span>
+                  <p>
+                      An agronomist, a seasoned travel/tours and farming projects consultant. A graduate of Agriculture (soil science) of Obafemi Awolowo Univ. 
+                      Nigeria President on the rock multipurpose coroperative society (2013 to Date) A senior management officer of societe Generate de survellance (S.G.S Nigeria)...
+                      <br />
+                      <a href="staffs.html" class="btn waves-effect waves-light blue lighten-1">Read More <i class="fa fa-paper-plane-o"></i></a>
+                  </p>
                 </div>
               </div>
           </div>
@@ -174,56 +228,97 @@
                   <img class="activator"  src="img/board/1.jpg" alt="ceo" width="300" height="300" >
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Hon. Amb. Dr Excel Odiri Godfreed<i class="material-icons right">more_vert</i></span>
-                  <p>Management</p>
+                  <span class="card-title activator grey-text text-darken-4">Management<i class="material-icons right">more_vert</i></span>
+                  <p>Hon. Amb. Dr Excel Odiri Godfreed</p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title grey-text text-darken-4">Management<i class="material-icons right">close</i></span>
+                  <p>
+                      A postgraduate of Cornerstone Univ. Tampa, Florida, USA(Ph.D in Mass Communications) A conferment of Honorary Doctorate degree in Corporate Management and governance, 
+                      Technology Univ. of America A certified and distinguish Peace Ambassador of The United Nations Peace Federation....
+                      <br />
+                      <a href="staffs.html" class="btn waves-effect waves-light blue lighten-1">Read More <i class="fa fa-paper-plane-o"></i></a>
+                  </p>
                 </div>
               </div>
           </div>
           
-           <div class="col s12 m3">
-               <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator"  src="img/board/4.jpg" alt="ceo" width="300" height="300" >
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Engineer Udoka Obele-B.<i class="material-icons right">more_vert</i></span>
-                  <p>Managing Director</p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-              </div>
-          </div>
+           
       </div>
 
     </div>
   </div>
 
+  
+    <!--- Services Section   --->
+    <div style="margin-top: 10px; margin-bottom: 25px" id="services" >
+        <div class="container ">
+         
+        <div class="section center-align light-blue darken-4 white-text">
+            <h4 class="white-text center-align">What We Do</h4>
+            <div class="row">
+                
+                <div class="col s12 m4"><i class="fa fa-truck fa-2x"></i><p>Clearing and forwarding</p></div>
+                
+                <div class="col s12 m4"><i class="fa fa-exchange fa-2x"></i><p>General Import and Export</p></div>
+                
+                <div class="col s12 m4"><i class="fa fa-plane fa-2x"></i><p>Exporting Commodities</p></div>
+                
+                <div class="col s12 m4"><i class="fa fa-briefcase fa-2x"></i><p>Consulting</p></div>
+                
+                <div class="col s12 m4"><i class="fa fa-ship fa-2x"></i><p>Freight</p></div>
+                
+                <div class="col s12 m4"><i class="fa fa-road fa-2x"></i><p>Transport</p></div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- End of services section -->
+    
+    
+    <!-- Partners starts Here -->
+    <div>
+        <div class="container" id="partners">
+            <div class="section center-align">
+                <div class="divider"></div>
+                <h4>Partners</h4>
+                <div class="row">
+                    
+                    <div class="col s12 m3 offset-m1"><img  height="120px" height="200" src="img/NAQS.PNG" /></div>
+                    
+                    <div class="col s12 m3"><img width="100%" height="120px" src="img/nepc.jpg" /></div>
+                    
+                    <div class="col s12 m3"><img width="100%" height="120px" src="img/nacima.jpg" /></div>
+                    
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Partners Ends Here -->
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">over 1000 people</h5>
+          <h5 class="header col s12 light">Serving over 1000 people around the globe</h5>
         </div>
       </div>
     </div>
       <div class="parallax"><img src="img/bg3.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
+    <div class="container" id="contact">
     <div class="section">
 
       <div class="row">
         <div class="col s12">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4 class="center">Contact Us</h4>
-          <p class="left-align light">Kindly drop a Message</p>
+          <p class="left-align light"><b>Kindly drop a Message</b></p>
           <div class="row">
             <form class="col s12">
               <div class="row">
@@ -270,17 +365,17 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Jung Frau</h5>
-          <p class="grey-text text-lighten-4">We are a Nigeria based agency that deals in the production of quality Agricultural products</p>
+          <p class="grey-text text-lighten-4">To supply quality products to our business partners all over the globe, in an effective manner. As a posterity for legacy</p>
 
 
         </div>
         <div class="col offset-l4 l2 s12">
           <h5 class="white-text">Connect </h5>
           <ul>
-            <li><a class="white-text" href="#!">facebook</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+              <li><a class="white-text" href="https://www.facebook.com/jungfraugroups"><i class="fa fa-facebook-square light-blue-text darken-4"></i> &nbsp; facebook</a></li>
+              <li><a class="white-text" href="https://twitter.com/JUNGFRAUGROUPS"><i class="fa fa-twitter"></i>&nbsp; Twitter</a></li>
+              <li><a class="white-text" href="https://www.instagram.com/jungfraugroups/"><i class="fa fa-instagram"></i>&nbsp; Instagram</a></li>
+            
           </ul>
         </div>
       </div>

@@ -76,3 +76,12 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+#staffs-list {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#staffs-list .divider {
+    margin-bottom: 10px;
+}
