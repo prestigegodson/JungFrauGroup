@@ -30,11 +30,19 @@ p {
   }
   
   .whatwedo{
-       background-color: #fff;
+       background-color:#2E65AB;
+  }
+  
+  .marginbtm60{
+      margin-bottom: 60px;
+  }
+  
+  .icons{
+      font-size:60px !important;
   }
   
   .products{
-      background-color: #f9fafc;
+      background-color: #ededed;
   }
   
   .blacktext{
